@@ -17,10 +17,6 @@ gulp.task('browser-sync', ['nodemon'], function() {
   })
 })
 
-gulp.task('heroku:production', function(){
-  runSeq('clean', 'build', 'minify')
-})
-
 gulp.task('nodemon', function (cb) {
   let started = false
 
