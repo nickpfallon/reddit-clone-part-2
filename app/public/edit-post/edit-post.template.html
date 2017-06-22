@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-8">
+
+    <form ng-submit="$ctrl.editPost()">
+      <div>
+        <label for="title">Edit Title</label>
+        <input id="title" type="text" ng-model="$ctrl.post.title" class="form-control" value="{{post.title}}">
+      </div>
+      <div>
+        <label for="body">Edit Body</label>
+        <textarea id="body" type="text" ng-model="$ctrl.post.body" class="form-control" value="{{post.body}}"></textarea>
+      </div>
+      <div>
+        <label for="author">Edit Author</label>
+        <input id="author" type="text" ng-model="$ctrl.post.author" class="form-control" value="{{post.author}}">
+      </div>
+      <div>
+        <label for="image-url">Edit Image URL</label>
+        <input id="image-url" type="text" ng-model="$ctrl.post.image_url" class="form-control" value="{{post.image_url}}">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">
+          Edit Post
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
