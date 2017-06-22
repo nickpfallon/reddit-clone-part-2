@@ -2,6 +2,9 @@
   "name": "reddit-clone-part-2",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "7.10.0"
+  },
   "scripts": {
     "start": "node ./app/app.js"
   },
