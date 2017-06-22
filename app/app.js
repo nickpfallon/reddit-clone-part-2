@@ -35,7 +35,7 @@ app.use(function(err, req, res, next) {
 })
 
 app.listen(port, function(){
-  console.log("Express server listening port" + port);
+  console.log("Express server listening port" + port)
 })
 
 module.exports = app
