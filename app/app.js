@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
 const app = express()
+const port = process.env.PORT || 3000
 
 if (process.env.NODE_ENV !== 'test') {
   const logger = require('morgan')
@@ -31,6 +32,10 @@ app.use(function(err, req, res, next) {
   console.log(err)
   res.status(err.status || 500)
   res.json(err)
+})
+
+app.listen(port, function(){
+  console.log("Express server listening port" + port);
 })
 
 module.exports = app
